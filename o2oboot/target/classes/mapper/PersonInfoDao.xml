@@ -61,10 +61,10 @@
 		FROM
 		tb_person_info
 		WHERE
-		user_id = #{personId}
+		user_id = #{userId}
 	</select>
 	<insert id="insertPersonInfo" parameterType="dlnu.o2oboot.entity.PersonInfo"
-		useGeneratedKeys="true" keyProperty="personId" keyColumn="user_id">
+		useGeneratedKeys="true" keyProperty="userId" keyColumn="user_id">
 		INSERT
 		INTO
 		tb_person_info(name,gender,email,profile_img,user_type,
@@ -84,6 +84,6 @@
 			<if test="lastEditTime != null">last_edit_time=#{lastEditTime},</if>
 			<if test="enableStatus != null">enable_status=#{enableStatus}</if>
 		</set>
-		where user_id=#{personId}
+		where user_id=#{userId}
 	</update>
 </mapper>

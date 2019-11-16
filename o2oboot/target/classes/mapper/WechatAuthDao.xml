@@ -9,7 +9,7 @@
 		<result column="create_time" property="createTime" />
 		<association property="personInfo" column="user_id"
 			javaType="dlnu.o2oboot.entity.PersonInfo">
-			<id column="user_id" property="personId" />
+			<id column="user_id" property="userId" />
 			<result column="name" property="name" />
 			<result column="gender" property="gender" />
 			<result column="email" property="email" />
@@ -51,6 +51,6 @@
 		INTO
 		tb_wechat_auth(user_id,open_id,create_time)
 		VALUES
-		(#{personInfo.personId},#{openId},#{createTime})
+		(#{personInfo.userId},#{openId},#{createTime})
 	</insert>
 </mapper>

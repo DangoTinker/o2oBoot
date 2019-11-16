@@ -20,23 +20,23 @@
   </component>
   <component name="ProjectId" id="1TUhPEU6b6xB7NSyswY67IkuXNa" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\resources" />
-      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\dto" />
-      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\enums" />
-      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\resources\mapper" />
-      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\dao" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\webapp\WEB-INF\html" />
+      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\webapp\resources\js" />
+      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\web\local" />
+      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\util" />
       <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\resources" />
     </key>
   </component>
@@ -147,26 +147,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/service/impl/ShopCategoryServiceImpl.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/service/impl/ShopCategoryServiceImpl.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/service/impl/ShopCategoryServiceImpl.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/cache/JedisUtil.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/web/wechat/WechatController.java</url>
           <line>24</line>
           <option name="timeStamp" value="13" />
@@ -177,9 +157,9 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/web/wechat/WechatLoginController.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/web/frontend/MainPageController.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

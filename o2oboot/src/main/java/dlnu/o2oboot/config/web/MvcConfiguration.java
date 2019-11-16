@@ -32,7 +32,7 @@ public class MvcConfiguration implements WebMvcConfigurer, ApplicationContextAwa
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry resourceHandlerRegistry){
         resourceHandlerRegistry.addResourceHandler("/upload/**")
-                .addResourceLocations("file:/home/o2o/image");
+                .addResourceLocations("file:/home/o2o/image/upload/");
 
     }
 

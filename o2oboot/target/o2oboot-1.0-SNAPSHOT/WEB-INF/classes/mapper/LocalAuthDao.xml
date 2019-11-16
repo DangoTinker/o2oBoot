@@ -14,7 +14,7 @@
         <result column="last_edit_time" property="lastEditTime"/>
 
         <association property="personInfo" column="user_id"  javaType="dlnu.o2oboot.entity.PersonInfo">
-            <id column="user_id" property="personId"/>
+            <id column="user_id" property="userId"/>
             <result column="name" property="name"/>
             <result column="gender" property="gender"/>
             <result column="email" property="email"/>
@@ -77,7 +77,7 @@
         values
         (#{username},
         #{password},
-        #{personInfo.personId},
+        #{personInfo.userId},
         #{createTime},
         #{lastEditTime})
     </insert>

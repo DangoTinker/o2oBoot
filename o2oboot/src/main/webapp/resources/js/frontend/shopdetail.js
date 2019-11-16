@@ -17,6 +17,8 @@ $(function(){
 
     addItems(pageSize, pageNum);
 
+
+
     function getSearchDivData(){
 
         $.getJSON(searchDivUrl,function(data){
@@ -101,6 +103,12 @@ $(function(){
         })
 
     }
+
+
+    $('.product-list').on('click', '.card', function(e) {
+            		var productId = e.currentTarget.dataset.productId;
+            		window.location.href = '/frontend/productdetail?productId=' + productId;
+            	});
 
     // 下滑屏幕自动进行分页搜索
     $(document).on('infinite', '.infinite-scroll-bottom', function() {

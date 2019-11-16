@@ -112,7 +112,7 @@ public class ShopManagementController {
 
         PersonInfo personInfo=new PersonInfo();
 
-        personInfo.setPersonId(9L);
+        personInfo.setUserId(9L);
 
         shop.setOwner(personInfo);
 
@@ -195,11 +195,12 @@ public class ShopManagementController {
 
         try{
 
-            PersonInfo tempUser=new PersonInfo();
-            tempUser.setPersonId(9L);
-            tempUser.setName("王磊");
+//            PersonInfo tempUser=new PersonInfo();
+//            tempUser.setUserId(9L);
+//            tempUser.setName("王磊");
+//            session.setAttribute("user",tempUser);
 
-            session.setAttribute("user",tempUser);
+
             PersonInfo user= (PersonInfo) session.getAttribute("user");
             Shop shopCondition=new Shop();
             shopCondition.setOwner(user);

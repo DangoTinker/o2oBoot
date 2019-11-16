@@ -3,7 +3,7 @@ package dlnu.o2oboot.entity;
 import java.util.Date;
 
 public class PersonInfo {
-    private Long personId;
+    private Long userId;
     private String name;
     private String profileImg;
     private String email;
@@ -29,8 +29,8 @@ public class PersonInfo {
         this.lastEditTime = lastEditTime;
     }
 
-    public void setPersonId(Long personId) {
-        this.personId = personId;
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
     public void setName(String name) {
@@ -65,8 +65,8 @@ public class PersonInfo {
         this.lastEditTime = lastEditTime;
     }
 
-    public Long getPersonId() {
-        return personId;
+    public Long getUserId() {
+        return userId;
     }
 
     public String getName() {

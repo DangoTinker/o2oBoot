@@ -22,6 +22,7 @@ C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\web\shopadmin\Pro
 C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\web\local\LocalAuthController.java
 C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\dto\PersonInfoExecution.java
 C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\exceptions\HeadLineOperationException.java
+C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\web\local\LocalController.java
 C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\enums\ShopStateEnum.java
 C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\service\AreaService.java
 C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\web\superadmin\AreaController.java
@@ -52,6 +53,7 @@ C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\dao\LocalAuthDao.
 C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\dao\ShopDao.java
 C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\config\dao\EncryptPropertyPlaceholderConfigurerConfiguration.java
 C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\service\ShopCategoryService.java
+C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\util\CodeUtil.java
 C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\web\shopadmin\ProductCategoryManagementController.java
 C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\util\PageCalculator.java
 C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\exceptions\ShopAuthMapOperationException.java

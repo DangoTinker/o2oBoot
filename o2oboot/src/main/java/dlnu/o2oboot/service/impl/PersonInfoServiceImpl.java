@@ -45,7 +45,7 @@ public class PersonInfoServiceImpl implements PersonInfoService {
 	@Transactional
 	public PersonInfoExecution modifyPersonInfo(PersonInfo personInfo) {
 		// 空值判断，主要是判断用户Id是否为空
-		if (personInfo == null || personInfo.getPersonId() == null) {
+		if (personInfo == null || personInfo.getUserId() == null) {
 			return new PersonInfoExecution(PersonInfoStateEnum.EMPTY);
 		} else {
 			try {
@@ -54,7 +54,7 @@ public class PersonInfoServiceImpl implements PersonInfoService {
 				if (effectedNum <= 0) {
 					return new PersonInfoExecution(PersonInfoStateEnum.INNER_ERROR);
 				} else {
-					personInfo = personInfoDao.queryPersonInfoById(personInfo.getPersonId());
+					personInfo = personInfoDao.queryPersonInfoById(personInfo.getUserId());
 					return new PersonInfoExecution(PersonInfoStateEnum.SUCCESS, personInfo);
 				}
 			} catch (Exception e) {

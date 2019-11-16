@@ -1,5 +1,6 @@
 dlnu\o2oboot\exceptions\PersonInfoOperationException.class
 dlnu\o2oboot\config\dao\SessionFactoryConfiguration.class
+dlnu\o2oboot\web\local\LocalController.class
 dlnu\o2oboot\dao\HeadLineDao.class
 dlnu\o2oboot\exceptions\AwardOperationException.class
 dlnu\o2oboot\util\ImageUtil.class
@@ -23,6 +24,7 @@ dlnu\o2oboot\dao\ShopDao.class
 dlnu\o2oboot\service\impl\LocalAuthServiceImpl.class
 dlnu\o2oboot\service\impl\AreaServiceImpl.class
 dlnu\o2oboot\entity\Shop.class
+dlnu\o2oboot\util\CodeUtil.class
 dlnu\o2oboot\O2oApplication.class
 dlnu\o2oboot\enums\ProductStateEnum.class
 dlnu\o2oboot\service\impl\ShopServiceImpl.class

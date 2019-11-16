@@ -9,7 +9,7 @@
         insert into tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,
         shop_addr,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice
         ) values(
-            #{owner.personId},#{area.areaId},#{shopCategory.shopCategoryId},#{shopName}
+            #{owner.userId},#{area.areaId},#{shopCategory.shopCategoryId},#{shopName}
             ,#{shopDesc},#{shopAddr},#{phone},#{shopImg},#{priority},#{createTime},
             #{lastEditTime},#{enableStatus},#{advice}
         )
@@ -62,7 +62,7 @@
         </association>
 
         <association column="owner_id" property="owner" javaType="dlnu.o2oboot.entity.PersonInfo">
-            <id column="user_id" property="personId"/>
+            <id column="user_id" property="userId"/>
             <result column="name" property="name"/>
         </association>
 
@@ -145,8 +145,8 @@
             <if test="shopCondition.shopName!=null">
                 and s.shop_name like '%${shopCondition.shopName}%'
             </if>
-            <if test="shopCondition.owner!=null and shopCondition.owner.personId!=null">
-                and s.owner_id=#{shopCondition.owner.personId}
+            <if test="shopCondition.owner!=null and shopCondition.owner.userId!=null">
+                and s.owner_id=#{shopCondition.owner.userId}
             </if>
 
             and
@@ -196,8 +196,8 @@
             <if test="shopCondition.shopName!=null">
                 and s.shop_name like '%${shopCondition.shopName}%'
             </if>
-            <if test="shopCondition.owner!=null and shopCondition.owner.personId!=null">
-                and s.owner_id=#{shopCondition.owner.personId}
+            <if test="shopCondition.owner!=null and shopCondition.owner.userId!=null">
+                and s.owner_id=#{shopCondition.owner.userId}
             </if>
 
             and

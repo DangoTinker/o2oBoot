@@ -12,7 +12,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import  dlnu.o2oboot.dto.UserAccessToken;
 import dlnu.o2oboot.dto.WechatAuthExecution;
@@ -20,8 +19,6 @@ import dlnu.o2oboot.dto.WechatUser;
 import dlnu.o2oboot.entity.PersonInfo;
 import dlnu.o2oboot.entity.WechatAuth;
 import dlnu.o2oboot.enums.WechatAuthStateEnum;
-import dlnu.o2oboot.service.PersonInfoService;
-import dlnu.o2oboot.service.WechatAuthService;
 import dlnu.o2oboot.util.wechat.WechatUtil;
 
 /**
@@ -90,7 +87,7 @@ public class WechatLoginController {
 			if (we.getState() != WechatAuthStateEnum.SUCCESS.getState()) {
 				return null;
 			} else {
-				personInfo = personInfoService.getPersonInfoById(auth.getPersonInfo().getPersonId());
+				personInfo = personInfoService.getPersonInfoById(auth.getPersonInfo().getUserId());
 				request.getSession().setAttribute("user", personInfo);
 			}
 		} else {
