@@ -18,7 +18,8 @@
        last_edit_time,
        enable_status,
        product_category_id,
-       shop_id
+       shop_id,
+       point
        )
        values(
        #{productName},
@@ -33,7 +34,8 @@
        #{enableStatus},
 
        #{productCategory.productCategoryId},
-       #{shop.shopId}
+       #{shop.shopId},
+       #{point}
 
        )
 
@@ -50,6 +52,7 @@
         <result column="create_time" property="createTime"/>
         <result column="last_edit_time" property="lastEditTime"/>
         <result column="enable_status" property="enableStatus"/>
+        <result column="point" property="point"/>
         <association property="productCategory" column="product_category_id"
             javaType="dlnu.o2oboot.entity.ProductCategory">
             <id column="product_category_id" property="productCategoryId"/>
@@ -91,7 +94,7 @@
         p.enable_status,
         p.product_category_id,
         p.shop_id,
-
+        p.point,
         pm.product_img_id,
         pm.img_addr as detail_img,
         pm.img_desc,
@@ -127,7 +130,7 @@
             <if test="priority != null">priority=#{priority},</if>
             <if test="lastEditTime != null">last_edit_time=#{lastEditTime},</if>
             <if test="enableStatus != null">enable_status=#{enableStatus},</if>
-
+            <if test="point != null">point=#{point},</if>
             <if
                     test="productCategory != null
 				 and productCategory.productCategoryId != null">

@@ -13,6 +13,9 @@ $(function(){
     	var productName = '';
 
 
+    $('#exchangelist').attr('href', '/frontend/awardlist?shopId=' +
+	 shopId);
+
     getSearchDivData();
 
     addItems(pageSize, pageNum);

@@ -1,6 +1,8 @@
 package dlnu.o2oboot.config.web;
 
 import com.google.code.kaptcha.servlet.KaptchaServlet;
+import dlnu.o2oboot.interceptor.shopadmin.ShopLoginInterceptor;
+import dlnu.o2oboot.interceptor.shopadmin.ShopPermissionInterceptor;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -10,10 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
-import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import javax.servlet.ServletException;
@@ -104,6 +103,48 @@ public class MvcConfiguration implements WebMvcConfigurer, ApplicationContextAwa
         servlet.addInitParameter("kaptcha.textproducer.char.length", clength);// 字符个数
         servlet.addInitParameter("kaptcha.textproducer.font.names", fnames);// 字体
         return servlet;
+    }
+
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        /** 店家管理系统拦截部分 **/
+        String interceptPath = "/shopadmin/**";
+        // 注册拦截器
+        InterceptorRegistration loginIR = registry.addInterceptor(new ShopLoginInterceptor());
+        // 配置拦截的路径
+        loginIR.addPathPatterns(interceptPath);
+        /** shopauthmanagement page **/
+        loginIR.excludePathPatterns("/shopadmin/addshopauthmap");
+        /** scan **/
+        loginIR.excludePathPatterns("/shopadmin/adduserproductmap");
+        loginIR.excludePathPatterns("/shopadmin/exchangeaward");
+//         还可以注册其它的拦截器
+        InterceptorRegistration permissionIR = registry.addInterceptor(new ShopPermissionInterceptor());
+        // 配置拦截的路径
+        permissionIR.addPathPatterns(interceptPath);
+        // 配置不拦截的路径
+        /** shoplist page **/
+        permissionIR.excludePathPatterns("/shopadmin/shoplist");
+        permissionIR.excludePathPatterns("/shopadmin/getshoplist");
+
+
+
+
+        /** shopregister page **/
+        permissionIR.excludePathPatterns("/shopadmin/shopinitinfo");
+        permissionIR.excludePathPatterns("/shopadmin/registershop");
+        permissionIR.excludePathPatterns("/shopadmin/shopoperation");
+        /** shopmanage page **/
+        permissionIR.excludePathPatterns("/shopadmin/shopmanagement");
+        permissionIR.excludePathPatterns("/shopadmin/getshopmanagementinfo");
+        /** shopauthmanagement page **/
+        permissionIR.excludePathPatterns("/shopadmin/addshopauthmap");
+        /** scan **/
+        permissionIR.excludePathPatterns("/shopadmin/adduserproductmap");
+        permissionIR.excludePathPatterns("/shopadmin/exchangeaward");
+
+
     }
 
 

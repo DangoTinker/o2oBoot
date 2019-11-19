@@ -20,12 +20,23 @@ public class Product {
     private Date createTime;
     private Date lastEditTime;
 
+    private int point;
+
     private List<ProductImg> productImgs;
     private ProductCategory productCategory;
     private Shop shop;
 
 
     public Product() {
+    }
+
+
+    public void setPoint(int point) {
+        this.point = point;
+    }
+
+    public int getPoint() {
+        return point;
     }
 
     public void setProductId(Long productId) {

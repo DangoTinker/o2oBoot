@@ -91,7 +91,7 @@ public class ProductCategoryManagementController {
     @ResponseBody
     public Map<String,Object> removeProductCategory(Long productCategoryId,HttpSession session){
 
-       //TODO 删除商品类别时应将该类别下的商品的category置为null
+
 
         Map<String,Object> model=new HashMap<String, Object>();
         Shop shop=(Shop)session.getAttribute("currentShop");

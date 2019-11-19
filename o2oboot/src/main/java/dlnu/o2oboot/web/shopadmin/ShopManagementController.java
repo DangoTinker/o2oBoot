@@ -25,6 +25,7 @@ import dlnu.o2oboot.util.HttpServletRequestUtil;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -110,15 +111,18 @@ public class ShopManagementController {
             return model;
         }
 
-        PersonInfo personInfo=new PersonInfo();
+        PersonInfo personInfo= (PersonInfo) request.getSession().getAttribute("user");
 
-        personInfo.setUserId(9L);
+
 
         shop.setOwner(personInfo);
 
         ShopExecution se= null;
         try {
             se = shopService.addShop(shop,new ImageHolder(shopImg.getInputStream(),shopImg.getOriginalFilename()));
+
+
+
         } catch (IOException e) {
             e.printStackTrace();
             model.put("success",false);
@@ -127,6 +131,13 @@ public class ShopManagementController {
         }
         if(se.getState()== ShopStateEnum.CHECK.getState()){
             model.put("success",true);
+            List<Shop> shopList = (List<Shop>) request.getSession().getAttribute("shopList");
+            if (shopList == null || shopList.size() == 0) {
+                shopList = new ArrayList<Shop>();
+            }
+            shopList.add(se.getShop());
+            request.getSession().setAttribute("shopList", shopList);
+
         }
         else{
             model.put("success",false);
@@ -205,6 +216,9 @@ public class ShopManagementController {
             Shop shopCondition=new Shop();
             shopCondition.setOwner(user);
             ShopExecution se=shopService.getShopList(shopCondition,0,10);
+
+            request.getSession().setAttribute("shopList", se.getShops());
+
             if(se.getState()==ShopStateEnum.SUCCESS.getState()){
                 model.put("success",true);
                 model.put("shopList",se.getShops());

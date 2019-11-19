@@ -20,23 +20,23 @@
   </component>
   <component name="ProjectId" id="1TUhPEU6b6xB7NSyswY67IkuXNa" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\test\java" />
+      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\web\shopadmin" />
+      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\webapp\resources\js\frontend" />
+      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\webapp\WEB-INF\html\frontend" />
+      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\web\frontend" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\webapp\WEB-INF\html" />
-      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\webapp\resources\js" />
-      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\web\local" />
-      <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\java\dlnu\o2oboot\util" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\63296\IdeaProjects\o2oboot\src\main\resources" />
     </key>
   </component>
@@ -57,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.O2oApplication (2)">
+  <component name="RunManager" selected="Remote.ali">
     <configuration name="O2oApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="root.O2oApplication" />
       <module name="o2oboot" />
@@ -87,6 +87,22 @@
     <configuration name="O2oApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="root.config.O2oApplication" />
       <module name="o2oboot" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShortNetUtilTest.testQueryArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="o2oboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.ShortNetUtilTest" />
+      <option name="METHOD_NAME" value="testQueryArea" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,9 +137,11 @@
       <item itemvalue="Application.O2oApplication (2)" />
       <item itemvalue="Remote.ali" />
       <item itemvalue="Remote.Unnamed" />
+      <item itemvalue="JUnit.ShortNetUtilTest.testQueryArea" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShortNetUtilTest.testQueryArea" />
         <item itemvalue="Application.O2oApplication (2)" />
         <item itemvalue="Application.O2oApplication (1)" />
         <item itemvalue="Application.O2oApplication" />
@@ -152,14 +170,39 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/web/shopadmin/ShopAdminController.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/web/shopadmin/ProductCategoryManagementController.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/web/frontend/MainPageController.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/util/ImageUtil.java</url>
           <line>38</line>
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/util/ImageUtil.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/web/shopadmin/AwardManagementController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/web/shopadmin/UserProductManagementController.java</url>
+          <line>285</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/web/shopadmin/UserProductManagementController.java</url>
+          <line>209</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dlnu/o2oboot/service/impl/UserProductMapServiceImpl.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -9,7 +9,9 @@ function getQueryString(name) {
 	}
 	return '';
 }
-
+function getContextPath(){
+	return "";
+}
 Date.prototype.Format = function(fmt) {
 	var o = {
 		"M+" : this.getMonth() + 1, // 月份

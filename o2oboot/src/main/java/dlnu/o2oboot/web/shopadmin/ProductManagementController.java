@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping(value="/shopadmin")
+@RequestMapping("/shopadmin")
 public class ProductManagementController {
 
     private int MAX_FILE_COUNT=6;

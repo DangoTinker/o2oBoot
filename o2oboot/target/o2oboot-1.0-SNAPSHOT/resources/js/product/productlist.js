@@ -1,5 +1,5 @@
 $(function(){
-     var getProductListUrl="/shopadmin/getproductlist?rowIndex=0&pageSize=100";
+     var getProductListUrl="/shopadmin/getproductlist?pageIndex=0&pageSize=100";
 var statusUrl = '/shopadmin/modifyproduct';
         getList();
 

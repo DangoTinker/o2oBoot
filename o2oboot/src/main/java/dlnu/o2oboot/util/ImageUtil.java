@@ -29,10 +29,10 @@ public class ImageUtil {
         String relativeAddr=targetAddr+realFileName+extension;
         File dest=new File(PathUtil.getImgBasePath()+relativeAddr);
         try{
-
+            File watermark=new File(PathUtil.getImgBasePath()+"/watermark.jpg");
             Thumbnails.of(multipartFile)
                     .size(200,200)
-                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath+"/watermark.jpg")),0.25f)
+                    .watermark(Positions.BOTTOM_RIGHT, ImageIO.read(watermark),0.25f)
                     .outputQuality(0.8f)
                     .toFile(dest);
         }catch (IOException e){

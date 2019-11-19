@@ -26,4 +26,34 @@ public class FrontendAdminController {
         return "frontend/productdetail";
     }
 
+    @RequestMapping(value = "/awardlist")
+    private String showAwardList() {
+        return "frontend/awardlist";
+    }
+
+    @RequestMapping(value = "/pointrecord")
+    private String showPointRecord() {
+        return "frontend/pointrecord";
+    }
+
+    @RequestMapping(value = "/myawarddetail")
+    private String showMyAwardDetail() {
+        return "frontend/myawarddetail";
+    }
+
+
+    @RequestMapping(value = "/myrecord")
+    private String showMyRecord() {
+        return "frontend/myrecord";
+    }
+
+    /**
+     * 用户各店铺积分信息页路由
+     *
+     * @return
+     */
+    @RequestMapping(value = "/mypoint")
+    private String showMyPoint() {
+        return "frontend/mypoint";
+    }
 }

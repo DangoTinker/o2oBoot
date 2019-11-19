@@ -109,6 +109,7 @@ public class ShopDetailController {
         if(productName!=null){
             productCondition.setProductName(productName);
         }
+        productCondition.setEnableStatus(1);
         return productCondition;
 
 
