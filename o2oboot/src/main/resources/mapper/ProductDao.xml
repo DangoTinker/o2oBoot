@@ -156,7 +156,7 @@
                 and product_name like '%${productCondition.productName}%'
             </if>
             <if test="productCondition.enableStatus!=null">
-                and product_enable_status=#{productCondition.enableStatus}
+                and enable_status=#{productCondition.enableStatus}
             </if>
 
         </where>
@@ -179,7 +179,7 @@
                 and product_name like '%${productCondition.productName}%'
             </if>
             <if test="productCondition.enableStatus!=null">
-                and product_enable_status=#{productCondition.enableStatus}
+                and enable_status=#{productCondition.enableStatus}
             </if>
 
         </where>

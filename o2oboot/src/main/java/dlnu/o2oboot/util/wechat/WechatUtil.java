@@ -26,7 +26,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 /**
  * 微信工具类
  * 
- * @author xiangze
+ *
  *
  */
 public class WechatUtil {

@@ -1,11 +1,13 @@
 package dlnu.o2oboot.config.redis;
 
+import dlnu.o2oboot.cache.JedisLockUtil;
 import dlnu.o2oboot.cache.JedisPoolWriper;
 import dlnu.o2oboot.cache.JedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 import redis.clients.jedis.JedisPoolConfig;
 
 @Configuration
@@ -64,6 +66,12 @@ public class RedisConfiguration {
     public JedisUtil.Strings getStrings(){
         JedisUtil.Strings strings=jedisUtil.new Strings();
         return strings;
+    }
+
+    @Bean(name="jedisLockUtil")
+    public JedisLockUtil getJedisLockUtil(){
+        JedisLockUtil jedisLockUtil=new JedisLockUtil(jedisUtil);
+        return jedisLockUtil;
     }
 
 

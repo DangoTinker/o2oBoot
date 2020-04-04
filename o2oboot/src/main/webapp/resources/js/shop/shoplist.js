@@ -58,6 +58,19 @@ $(function(){
 
     }
 
+
+    $('#log-out').click(function() {
+        $.ajax({
+                    url:"/local/logout",
+                    type:"get",
+                    dataType:"json",
+                    success:function(data){
+                        if(data.success){
+                           window.open ('/local/login','_self')
+                        }
+                    }
+                })
+	});
 })
 
 

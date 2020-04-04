@@ -23,6 +23,7 @@ public class JedisUtil {
         public String flushAll(){
             Jedis jedis=getJedis();
             String res=jedis.flushAll();
+
             jedis.close();
             return res;
         }
@@ -37,6 +38,7 @@ public class JedisUtil {
         public boolean exists(String key){
             Jedis jedis=getJedis();
             boolean res=jedis.exists(key);
+
             jedis.close();
             return res;
         }

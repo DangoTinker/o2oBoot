@@ -70,7 +70,7 @@ public class ShopDetailController {
 
             Product productCondition=compactProductConditionForSearch(shopId,productCategoryId,productName);
 
-            ProductExecution pe=productService.getProductList(productCondition,pageIndex,pageSize);
+            ProductExecution pe= productService.getProductList(productCondition,pageIndex,pageSize);
             if(pe.getState()== ProductStateEnum.SUCCESS.getState()){
                 List<Product> list=pe.getList();
                 model.put("success",true);

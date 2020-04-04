@@ -12,14 +12,14 @@ import dlnu.o2oboot.entity.Shop;
 /**
  * 店家管理系统操作验证拦截器
  * 
- * @author xiangze
+ *
  *
  */
 public class ShopPermissionInterceptor extends HandlerInterceptorAdapter {
 	/**
 	 * 主要做事前拦截，即用户操作发生前，改写preHandle里的逻辑，进行用户操作权限的拦截
 	 * 
-	 * @author xiangze
+	 *
 	 *
 	 */
 	@Override

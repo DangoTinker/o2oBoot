@@ -162,7 +162,7 @@ public class LocalAuthController {
         return modelMap;
     }
 
-    @RequestMapping(value = "/logout", method = RequestMethod.POST)
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
     @ResponseBody
     /**
      * 当用户点击登出按钮的时候注销session

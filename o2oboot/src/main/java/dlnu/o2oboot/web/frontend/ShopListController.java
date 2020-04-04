@@ -41,7 +41,7 @@ public class ShopListController {
             String id=request.getParameter("parentId");
             List<Area> areaList=areaService.getAreaList();
             model.put("areaList",areaList);
-            if(id!=null){
+            if(id!=null&&!id.equals("")){
                 Long parentId=Long.valueOf(id);
                 ShopCategory shopCategoryCondition=new ShopCategory();
                 ShopCategory parent=new ShopCategory();
